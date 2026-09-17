@@ -2,12 +2,16 @@
   "v": 3,
   "createdOnFiles": {"v": 1, "at": "2026-09-17T21:55:00Z"},
   "title": "TGA MODUL Redesign",
-  "launch": {"view": "focused", "file": "Main.dc.html"},
+  "launch": {"view": "canvas"},
   "pages": [],
   "boards": {
-    "Main.dc.html": {"x": 0, "y": 0, "w": 1440, "h": 4700, "title": "Startseite", "expand": "fill", "is_interactive": true}
+    "Main.dc.html": {"x": 0, "y": 0, "w": 1440, "h": 4700, "title": "Startseite", "is_interactive": true},
+    "Galerie.dc.html": {"x": 1560, "y": 0, "w": 1440, "h": 2200, "title": "Galerie", "is_interactive": true},
+    "Kontakt.dc.html": {"x": 3120, "y": 0, "w": 1440, "h": 1400, "title": "Kontakt", "is_interactive": true},
+    "Impressum.dc.html": {"x": 4680, "y": 0, "w": 1440, "h": 1300, "title": "Impressum", "is_interactive": true},
+    "Datenschutz.dc.html": {"x": 6240, "y": 0, "w": 1440, "h": 6200, "title": "Datenschutz", "is_interactive": true}
   },
-  "order": ["Main.dc.html"],
+  "order": ["Main.dc.html", "Galerie.dc.html", "Kontakt.dc.html", "Impressum.dc.html", "Datenschutz.dc.html"],
   "notes": {},
   "designSystems": []
 }
