@@ -48,44 +48,73 @@
     <p style="margin: 0; font-size: 16.5px; line-height: 1.65; color: #3B4450;">Wir möchten die Baubranche mit unserem Produkt revolutionieren. Unsere multifunktionalen, vorgefertigten und maßgeschneiderten Installationswände für Bäder sind sowohl im Altbau als auch im Neubau einsetzbar. Effizient, flexibel und zukunftsorientiert &ndash; entdecken Sie eine neue Art der Badinstallation.</p>
   </section>
 
-  <figure style="max-width: 520px; margin: 0 auto 72px; padding: 0 32px; text-align: center;">
-    <svg width="100%" height="auto" viewBox="0 0 420 380" fill="none" style="display: block;">
+  <figure style="max-width: 420px; margin: 0 auto 72px; padding: 0 32px; text-align: center;">
+    <div style="border-radius: 14px; overflow: hidden; box-shadow: 0 12px 32px rgba(11,37,69,0.22);">
+      <svg width="100%" height="100%" viewBox="0 0 500 500" style="display: block;">
       <defs>
-        <linearGradient id="heroTop" x1="100" y1="30" x2="320" y2="154" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#FBF9F2"/><stop offset="1" stop-color="#E9E1CC"/>
-        </linearGradient>
-        <linearGradient id="heroLeft" x1="100" y1="92" x2="210" y2="320" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#E2DAC6"/><stop offset="1" stop-color="#C7BC9E"/>
-        </linearGradient>
-        <linearGradient id="heroRight" x1="210" y1="154" x2="320" y2="258" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#C7BFAB"/><stop offset="1" stop-color="#A79A76"/>
-        </linearGradient>
+        <pattern id="gridhero" width="20" height="20" patternUnits="userSpaceOnUse">
+          <path d="M20 0H0V20" fill="none" stroke="#3E6FBE" stroke-width="0.6" opacity="0.55"/>
+        </pattern>
       </defs>
-      <ellipse cx="210" cy="352" rx="140" ry="18" fill="#0B2545" opacity="0.08"/>
-      <polygon points="210,30 320,92 210,154 100,92" fill="url(#heroTop)" stroke="#0B2545" stroke-width="2"/>
-      <polygon points="100,92 210,154 210,320 100,258" fill="url(#heroLeft)" stroke="#0B2545" stroke-width="2"/>
-      <polygon points="320,92 210,154 210,320 320,258" fill="url(#heroRight)" stroke="#0B2545" stroke-width="2"/>
-      <rect x="120" y="110" width="10" height="128" rx="2" fill="#FF5A36"/>
-      <rect x="140" y="118" width="10" height="120" rx="2" fill="#0B2545"/>
-      <rect x="160" y="126" width="10" height="112" rx="2" fill="#3FA9A0"/>
-      <rect x="180" y="134" width="10" height="104" rx="2" fill="#E8B84B"/>
-      <rect x="240" y="160" width="56" height="70" rx="4" fill="#0B2545"/>
-      <circle cx="255" cy="176" r="4" fill="#FF5A36"/>
-      <circle cx="255" cy="192" r="4" fill="#3FA9A0"/>
-      <circle cx="255" cy="208" r="4" fill="#E8B84B"/>
-      <line x1="270" y1="172" x2="288" y2="172" stroke="#F6F4EE" stroke-width="2"/>
-      <line x1="270" y1="188" x2="288" y2="188" stroke="#F6F4EE" stroke-width="2"/>
-      <line x1="270" y1="204" x2="288" y2="204" stroke="#F6F4EE" stroke-width="2"/>
-      <line x1="130" y1="110" x2="60" y2="80" stroke="#6B7480" stroke-width="1"/>
-      <text x="16" y="76" style="font-family:'IBM Plex Mono',monospace; font-size:11px; fill:#3B4450;">SANITÄR</text>
-      <line x1="185" y1="134" x2="120" y2="180" stroke="#6B7480" stroke-width="1"/>
-      <text x="16" y="184" style="font-family:'IBM Plex Mono',monospace; font-size:11px; fill:#3B4450;">HEIZUNG</text>
-      <line x1="268" y1="178" x2="352" y2="150" stroke="#6B7480" stroke-width="1"/>
-      <text x="336" y="144" style="font-family:'IBM Plex Mono',monospace; font-size:11px; fill:#3B4450;">KLIMA</text>
-      <line x1="268" y1="210" x2="352" y2="250" stroke="#6B7480" stroke-width="1"/>
-      <text x="332" y="260" style="font-family:'IBM Plex Mono',monospace; font-size:11px; fill:#3B4450;">ELEKTRO</text>
+      <rect width="500" height="500" fill="#1B4F94"/>
+      <rect width="500" height="500" fill="url(#gridhero)"/>
+
+      <!-- construction / perspective guide lines -->
+      <g stroke="#EAF2FF" stroke-width="0.8" opacity="0.35">
+        <line x1="250" y1="70" x2="20" y2="-20"/>
+        <line x1="250" y1="70" x2="480" y2="-20"/>
+        <line x1="110" y1="140" x2="-30" y2="95"/>
+        <line x1="390" y1="140" x2="530" y2="95"/>
+        <line x1="110" y1="140" x2="250" y2="480"/>
+        <line x1="390" y1="140" x2="250" y2="480"/>
+        <line x1="250" y1="70" x2="250" y2="480"/>
+        <line x1="20" y1="480" x2="480" y2="480"/>
+        <line x1="110" y1="330" x2="-20" y2="380"/>
+        <line x1="390" y1="330" x2="520" y2="380"/>
+      </g>
+
+      <!-- wireframe iso box (the register / installation wall) -->
+      <g fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round">
+        <polygon points="250,70 390,140 250,210 110,140"/>
+        <polygon points="110,140 250,210 250,400 110,330"/>
+        <polygon points="390,140 250,210 250,400 390,330"/>
+      </g>
+
+      <!-- panel / access door on the right face -->
+      <g fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity="0.9">
+        <rect x="300" y="230" width="60" height="90" rx="2"/>
+        <line x1="330" y1="230" x2="330" y2="320"/>
+        <circle cx="322" cy="275" r="2.4" fill="#FFFFFF"/>
+      </g>
+
+      <!-- conduit / pipe runs on the left face -->
+      <g stroke="#FFFFFF" stroke-width="1.1" opacity="0.85">
+        <line x1="140" y1="175" x2="140" y2="360"/>
+        <line x1="160" y1="185" x2="160" y2="352"/>
+        <line x1="180" y1="195" x2="180" y2="344"/>
+        <line x1="200" y1="205" x2="200" y2="336"/>
+      </g>
+
+      <!-- top vent lines -->
+      <g stroke="#FFFFFF" stroke-width="1" opacity="0.8">
+        <line x1="200" y1="118" x2="300" y2="118"/>
+        <line x1="215" y1="130" x2="285" y2="130"/>
+        <line x1="230" y1="142" x2="270" y2="142"/>
+      </g>
+
+      <!-- ground reference marks -->
+      <g fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.55">
+        <ellipse cx="75" cy="420" rx="16" ry="6"/>
+        <ellipse cx="430" cy="440" rx="20" ry="7"/>
+        <ellipse cx="250" cy="455" rx="10" ry="4"/>
+      </g>
+
+      <!-- frame -->
+      <rect x="14" y="14" width="472" height="472" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.8"/>
+      <rect x="22" y="22" width="456" height="456" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.5"/>
     </svg>
-    <figcaption class="tga-cap" style="margin-top: 12px;">Schematische 3D-Skizze eines Registers</figcaption>
+    </div>
+    <figcaption class="tga-cap" style="margin-top: 12px;">3D-Skizze im Bauplan-Stil eines Registers</figcaption>
   </figure>
 
   <section style="max-width: 1080px; margin: 0 auto; padding: 0 32px 96px;">
@@ -181,36 +210,71 @@
       </div>
       <div style="background: #F6F4EE; padding: 20px 24px 28px; display: flex; flex-direction: column; align-items: center;">
         <div class="tga-eyebrow" style="align-self: flex-start; color: #8A93A0; margin-bottom: 4px;">02 &mdash; 3D-Modell</div>
-        <svg width="260" height="290" viewBox="0 0 380 420" fill="none">
-          <defs>
-            <linearGradient id="modTop" x1="80" y1="40" x2="300" y2="164" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#FBF9F2"/><stop offset="1" stop-color="#E9E1CC"/>
-            </linearGradient>
-            <linearGradient id="modLeft" x1="80" y1="102" x2="190" y2="340" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#E2DAC6"/><stop offset="1" stop-color="#C7BC9E"/>
-            </linearGradient>
-            <linearGradient id="modRight" x1="190" y1="164" x2="300" y2="278" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#C7BFAB"/><stop offset="1" stop-color="#A79A76"/>
-            </linearGradient>
-          </defs>
-          <polygon points="190,40 300,102 190,164 80,102" fill="url(#modTop)" stroke="#0B2545" stroke-width="2"/>
-          <polygon points="80,102 190,164 190,340 80,278" fill="url(#modLeft)" stroke="#0B2545" stroke-width="2"/>
-          <polygon points="300,102 190,164 190,340 300,278" fill="url(#modRight)" stroke="#0B2545" stroke-width="2"/>
-          <rect x="98" y="120" width="9" height="145" rx="2" fill="#FF5A36"/>
-          <rect x="116" y="128" width="9" height="137" rx="2" fill="#0B2545"/>
-          <rect x="134" y="136" width="9" height="129" rx="2" fill="#3FA9A0"/>
-          <rect x="152" y="144" width="9" height="121" rx="2" fill="#E8B84B"/>
-          <rect x="222" y="180" width="60" height="76" rx="4" fill="#0B2545"/>
-          <circle cx="238" cy="198" r="4" fill="#FF5A36"/>
-          <circle cx="238" cy="216" r="4" fill="#3FA9A0"/>
-          <circle cx="238" cy="234" r="4" fill="#E8B84B"/>
-          <line x1="252" y1="194" x2="272" y2="194" stroke="#F6F4EE" stroke-width="2"/>
-          <line x1="252" y1="212" x2="272" y2="212" stroke="#F6F4EE" stroke-width="2"/>
-          <line x1="252" y1="230" x2="272" y2="230" stroke="#F6F4EE" stroke-width="2"/>
-          <line x1="150" y1="82" x2="230" y2="82" stroke="#0B2545" stroke-width="1.5"/>
-          <line x1="160" y1="90" x2="220" y2="90" stroke="#0B2545" stroke-width="1.5"/>
-          <ellipse cx="190" cy="390" rx="130" ry="16" fill="#0B2545" opacity="0.08"/>
-        </svg>
+        <div style="width: 260px; height: 260px; border-radius: 10px; overflow: hidden;">
+          <svg width="100%" height="100%" viewBox="0 0 500 500" style="display: block;">
+      <defs>
+        <pattern id="gridmod" width="20" height="20" patternUnits="userSpaceOnUse">
+          <path d="M20 0H0V20" fill="none" stroke="#3E6FBE" stroke-width="0.6" opacity="0.55"/>
+        </pattern>
+      </defs>
+      <rect width="500" height="500" fill="#1B4F94"/>
+      <rect width="500" height="500" fill="url(#gridmod)"/>
+
+      <!-- construction / perspective guide lines -->
+      <g stroke="#EAF2FF" stroke-width="0.8" opacity="0.35">
+        <line x1="250" y1="70" x2="20" y2="-20"/>
+        <line x1="250" y1="70" x2="480" y2="-20"/>
+        <line x1="110" y1="140" x2="-30" y2="95"/>
+        <line x1="390" y1="140" x2="530" y2="95"/>
+        <line x1="110" y1="140" x2="250" y2="480"/>
+        <line x1="390" y1="140" x2="250" y2="480"/>
+        <line x1="250" y1="70" x2="250" y2="480"/>
+        <line x1="20" y1="480" x2="480" y2="480"/>
+        <line x1="110" y1="330" x2="-20" y2="380"/>
+        <line x1="390" y1="330" x2="520" y2="380"/>
+      </g>
+
+      <!-- wireframe iso box (the register / installation wall) -->
+      <g fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round">
+        <polygon points="250,70 390,140 250,210 110,140"/>
+        <polygon points="110,140 250,210 250,400 110,330"/>
+        <polygon points="390,140 250,210 250,400 390,330"/>
+      </g>
+
+      <!-- panel / access door on the right face -->
+      <g fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity="0.9">
+        <rect x="300" y="230" width="60" height="90" rx="2"/>
+        <line x1="330" y1="230" x2="330" y2="320"/>
+        <circle cx="322" cy="275" r="2.4" fill="#FFFFFF"/>
+      </g>
+
+      <!-- conduit / pipe runs on the left face -->
+      <g stroke="#FFFFFF" stroke-width="1.1" opacity="0.85">
+        <line x1="140" y1="175" x2="140" y2="360"/>
+        <line x1="160" y1="185" x2="160" y2="352"/>
+        <line x1="180" y1="195" x2="180" y2="344"/>
+        <line x1="200" y1="205" x2="200" y2="336"/>
+      </g>
+
+      <!-- top vent lines -->
+      <g stroke="#FFFFFF" stroke-width="1" opacity="0.8">
+        <line x1="200" y1="118" x2="300" y2="118"/>
+        <line x1="215" y1="130" x2="285" y2="130"/>
+        <line x1="230" y1="142" x2="270" y2="142"/>
+      </g>
+
+      <!-- ground reference marks -->
+      <g fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.55">
+        <ellipse cx="75" cy="420" rx="16" ry="6"/>
+        <ellipse cx="430" cy="440" rx="20" ry="7"/>
+        <ellipse cx="250" cy="455" rx="10" ry="4"/>
+      </g>
+
+      <!-- frame -->
+      <rect x="14" y="14" width="472" height="472" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.8"/>
+      <rect x="22" y="22" width="456" height="456" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.5"/>
+    </svg>
+        </div>
         <p style="margin: 4px 0 0; font-size: 12.5px; color: #8A93A0; text-align: center; max-width: 280px;">Erster Entwurf zur Veranschaulichung &ndash; f&uuml;r ein pr&auml;zises 3D-Modell planen wir eine detaillierte CAD-Visualisierung.</p>
       </div>
     </div>
